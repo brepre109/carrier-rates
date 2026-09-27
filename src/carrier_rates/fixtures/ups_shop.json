@@ -1,0 +1,55 @@
+{
+  "_comment": "Synthetic UPS Rating (Shop) response (hand-written, invented amounts). Numbers are strings, as UPS sends them.",
+  "status": 200,
+  "headers": {"Content-Type": "application/json"},
+  "body": {
+    "RateResponse": {
+      "Response": {
+        "ResponseStatus": {"Code": "1", "Description": "Success"},
+        "Alert": [{"Code": "110971", "Description": "Your invoice may vary from the displayed reference rates"}],
+        "TransactionReference": {"CustomerContext": "carrier-rates"}
+      },
+      "RatedShipment": [
+        {
+          "Service": {"Code": "03", "Description": ""},
+          "BillingWeight": {"UnitOfMeasurement": {"Code": "LBS", "Description": "Pounds"}, "Weight": "7.0"},
+          "TransportationCharges": {"CurrencyCode": "USD", "MonetaryValue": "16.20"},
+          "ItemizedCharges": [
+            {"Code": "375", "CurrencyCode": "USD", "MonetaryValue": "2.41"},
+            {"Code": "270", "CurrencyCode": "USD", "MonetaryValue": "0.00"}
+          ],
+          "ServiceOptionsCharges": {"CurrencyCode": "USD", "MonetaryValue": "0.00"},
+          "TotalCharges": {"CurrencyCode": "USD", "MonetaryValue": "16.20"},
+          "NegotiatedRateCharges": {
+            "ItemizedCharges": [{"Code": "375", "CurrencyCode": "USD", "MonetaryValue": "2.02"}],
+            "TotalCharge": {"CurrencyCode": "USD", "MonetaryValue": "13.48"}
+          }
+        },
+        {
+          "Service": {"Code": "12", "Description": ""},
+          "GuaranteedDelivery": {"BusinessDaysInTransit": "3"},
+          "BillingWeight": {"UnitOfMeasurement": {"Code": "LBS"}, "Weight": "7.0"},
+          "ItemizedCharges": [{"Code": "375", "CurrencyCode": "USD", "MonetaryValue": "4.30"}],
+          "ServiceOptionsCharges": {"CurrencyCode": "USD", "MonetaryValue": "0.00"},
+          "TotalCharges": {"CurrencyCode": "USD", "MonetaryValue": "31.55"},
+          "NegotiatedRateCharges": {"TotalCharge": {"CurrencyCode": "USD", "MonetaryValue": "27.90"}}
+        },
+        {
+          "Service": {"Code": "02", "Description": ""},
+          "GuaranteedDelivery": {"BusinessDaysInTransit": "2"},
+          "BillingWeight": {"UnitOfMeasurement": {"Code": "LBS"}, "Weight": "7.0"},
+          "ItemizedCharges": [{"Code": "375", "CurrencyCode": "USD", "MonetaryValue": "5.60"}],
+          "TotalCharges": {"CurrencyCode": "USD", "MonetaryValue": "44.85"},
+          "NegotiatedRateCharges": {"TotalCharge": {"CurrencyCode": "USD", "MonetaryValue": "37.66"}}
+        },
+        {
+          "Service": {"Code": "01", "Description": ""},
+          "GuaranteedDelivery": {"BusinessDaysInTransit": "1", "DeliveryByTime": "10:30 A.M."},
+          "BillingWeight": {"UnitOfMeasurement": {"Code": "LBS"}, "Weight": "7.0"},
+          "ItemizedCharges": [{"Code": "375", "CurrencyCode": "USD", "MonetaryValue": "11.02"}],
+          "TotalCharges": {"CurrencyCode": "USD", "MonetaryValue": "96.30"}
+        }
+      ]
+    }
+  }
+}

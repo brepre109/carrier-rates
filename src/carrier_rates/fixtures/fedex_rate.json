@@ -1,0 +1,105 @@
+{
+  "_comment": "Synthetic FedEx Rate API response (hand-written, invented amounts).",
+  "status": 200,
+  "headers": {"Content-Type": "application/json"},
+  "body": {
+    "transactionId": "00000000-0000-0000-0000-000000000000",
+    "output": {
+      "quoteDate": "2026-09-28",
+      "encoded": false,
+      "rateReplyDetails": [
+        {
+          "serviceType": "FEDEX_GROUND",
+          "serviceName": "FedEx Ground",
+          "packagingType": "YOUR_PACKAGING",
+          "commit": {"transitDays": {"minimumTransitTime": "FIVE_DAYS", "description": "5 Business Days"}},
+          "operationalDetail": {"transitTime": "FIVE_DAYS"},
+          "ratedShipmentDetails": [
+            {
+              "rateType": "ACCOUNT",
+              "ratedWeightMethod": "DIM",
+              "totalBaseCharge": 11.40,
+              "totalNetCharge": 13.95,
+              "currency": "USD",
+              "shipmentRateDetail": {
+                "rateZone": "8",
+                "totalBillingWeight": {"units": "LB", "value": 7.0},
+                "surCharges": [
+                  {"type": "FUEL", "description": "Fuel Surcharge", "amount": 2.05},
+                  {"type": "RESIDENTIAL_DELIVERY", "description": "Residential delivery", "amount": 0.50}
+                ],
+                "currency": "USD"
+              }
+            },
+            {
+              "rateType": "LIST",
+              "ratedWeightMethod": "DIM",
+              "totalBaseCharge": 14.80,
+              "totalNetCharge": 17.62,
+              "currency": "USD",
+              "shipmentRateDetail": {
+                "rateZone": "8",
+                "totalBillingWeight": {"units": "LB", "value": 7.0},
+                "surCharges": [
+                  {"type": "FUEL", "description": "Fuel Surcharge", "amount": 2.32},
+                  {"type": "RESIDENTIAL_DELIVERY", "description": "Residential delivery", "amount": 0.50}
+                ],
+                "currency": "USD"
+              }
+            }
+          ]
+        },
+        {
+          "serviceType": "FEDEX_2_DAY",
+          "serviceName": "FedEx 2Day",
+          "packagingType": "YOUR_PACKAGING",
+          "commit": {
+            "dateDetail": {"dayOfWeek": "WED", "dayFormat": "2026-09-30T20:00:00"},
+            "transitDays": {"minimumTransitTime": "TWO_DAYS"}
+          },
+          "ratedShipmentDetails": [
+            {
+              "rateType": "ACCOUNT",
+              "totalNetCharge": 38.10,
+              "currency": "USD",
+              "shipmentRateDetail": {
+                "totalBillingWeight": {"units": "LB", "value": 7.0},
+                "surCharges": [{"type": "FUEL", "description": "Fuel Surcharge", "amount": 5.10}],
+                "currency": "USD"
+              }
+            },
+            {
+              "rateType": "LIST",
+              "totalNetCharge": 46.75,
+              "currency": "USD",
+              "shipmentRateDetail": {
+                "totalBillingWeight": {"units": "LB", "value": 7.0},
+                "surCharges": [{"type": "FUEL", "description": "Fuel Surcharge", "amount": 6.25}],
+                "currency": "USD"
+              }
+            }
+          ]
+        },
+        {
+          "serviceType": "STANDARD_OVERNIGHT",
+          "serviceName": "FedEx Standard Overnight",
+          "packagingType": "YOUR_PACKAGING",
+          "commit": {"dateDetail": {"dayOfWeek": "TUE", "dayFormat": "2026-09-29T20:00:00"}},
+          "operationalDetail": {"transitTime": "ONE_DAY", "deliveryDate": "2026-09-29T20:00:00"},
+          "ratedShipmentDetails": [
+            {
+              "rateType": "LIST",
+              "totalNetCharge": 89.40,
+              "currency": "USD",
+              "shipmentRateDetail": {
+                "totalBillingWeight": {"units": "LB", "value": 7.0},
+                "surCharges": [],
+                "currency": "USD"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

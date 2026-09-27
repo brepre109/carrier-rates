@@ -1,0 +1,13 @@
+{
+  "_comment": "Synthetic fixture in the documented UPS OAuth response shape. Note expires_in is a string.",
+  "status": 200,
+  "headers": {"Content-Type": "application/json"},
+  "body": {
+    "token_type": "Bearer",
+    "issued_at": "1790000000000",
+    "client_id": "fixture-client-id",
+    "access_token": "fixture-ups-access-token",
+    "expires_in": "14399",
+    "status": "approved"
+  }
+}

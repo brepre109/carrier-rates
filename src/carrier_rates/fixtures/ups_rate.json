@@ -1,0 +1,17 @@
+{
+  "_comment": "Synthetic UPS Rating (Rate, single service) response. RatedShipment is an object here, not a list.",
+  "status": 200,
+  "headers": {"Content-Type": "application/json"},
+  "body": {
+    "RateResponse": {
+      "Response": {"ResponseStatus": {"Code": "1", "Description": "Success"}},
+      "RatedShipment": {
+        "Service": {"Code": "03", "Description": ""},
+        "BillingWeight": {"UnitOfMeasurement": {"Code": "LBS"}, "Weight": "7.0"},
+        "ItemizedCharges": {"Code": "375", "CurrencyCode": "USD", "MonetaryValue": "2.41"},
+        "TotalCharges": {"CurrencyCode": "USD", "MonetaryValue": "16.20"},
+        "NegotiatedRateCharges": {"TotalCharge": {"CurrencyCode": "USD", "MonetaryValue": "13.48"}}
+      }
+    }
+  }
+}

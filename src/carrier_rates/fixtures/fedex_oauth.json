@@ -1,0 +1,11 @@
+{
+  "_comment": "Synthetic fixture in the documented FedEx OAuth response shape. Not a real token.",
+  "status": 200,
+  "headers": {"Content-Type": "application/json"},
+  "body": {
+    "access_token": "fixture-fedex-access-token",
+    "token_type": "bearer",
+    "expires_in": 3599,
+    "scope": "CXS"
+  }
+}

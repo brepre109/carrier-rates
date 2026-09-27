@@ -1,0 +1,27 @@
+{
+  "_comment": "Synthetic UPS Shoptimeintransit response: TimeInTransit carries the estimated arrival.",
+  "status": 200,
+  "headers": {"Content-Type": "application/json"},
+  "body": {
+    "RateResponse": {
+      "Response": {"ResponseStatus": {"Code": "1", "Description": "Success"}},
+      "RatedShipment": [
+        {
+          "Service": {"Code": "03", "Description": ""},
+          "BillingWeight": {"UnitOfMeasurement": {"Code": "LBS"}, "Weight": "7.0"},
+          "TotalCharges": {"CurrencyCode": "USD", "MonetaryValue": "16.20"},
+          "NegotiatedRateCharges": {"TotalCharge": {"CurrencyCode": "USD", "MonetaryValue": "13.48"}},
+          "TimeInTransit": {
+            "ServiceSummary": {
+              "Service": {"Description": "UPS Ground"},
+              "EstimatedArrival": {
+                "Arrival": {"Date": "20261002", "Time": "233000"},
+                "BusinessDaysInTransit": "4"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
