@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "carrier-rates"
+version = "0.1.0"
+description = "Normalized FedEx and UPS rate quotes: OAuth, token caching, fixture replay and a CLI."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Brett Prejeant" }]
+dependencies = []
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.scripts]
+carrier-rates = "carrier_rates.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+carrier_rates = ["fixtures/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
