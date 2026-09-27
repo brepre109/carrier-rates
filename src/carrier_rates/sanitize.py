@@ -11,7 +11,8 @@ SENSITIVE_KEYS = {
     # credentials / tokens
     "access_token", "refresh_token", "id_token", "client_id", "client_secret", "authorization",
     # account identifiers
-    "accountnumber", "shippernumber", "shipperaccountnumber", "account", "x-merchant-id",
+    "accountnumber", "shippernumber", "shipperaccountnumber", "account",
+    "x-merchant-id",
     # request correlation ids can embed account data on some carriers
     "transactionid", "customertransactionid", "customercontext",
     # personal data
