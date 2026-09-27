@@ -1,0 +1,3 @@
+{"status": 401, "headers": {"Content-Type": "application/json"},
+ "body": {"transactionId": "00000000-0000-0000-0000-000000000000",
+          "errors": [{"code": "NOT.AUTHORIZED.ERROR", "message": "The given client credentials were not valid."}]}}
